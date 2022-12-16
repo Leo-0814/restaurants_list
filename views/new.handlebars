@@ -1,0 +1,77 @@
+<h1 class="mb-1 restaurant-show-title">Add Restaurant</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-10 mx-auto">
+            <form action="/restaurants/new" method="POST" enctype="multipart/form-data">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">名稱 : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="請輸入餐廳名稱" name="name" id="name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="name_en" class="col-sm-2 col-form-label">名稱(en) : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="請輸入餐廳英文名稱"  name="name_en"
+                            id="name_en">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="category" class="col-sm-2 col-form-label">類別 : </label>
+                    <div class="col-sm-10">
+                        <select class="custom-select" id="category" name="category">
+                            <option>中東料理</option>
+                            <option>日本料理</option>
+                            <option>義式餐廳</option>
+                            <option>美式</option>
+                            <option>酒吧</option>
+                            <option>咖啡</option>
+                            <option>其他</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">圖片 : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="請輸入圖片url" name="image" id="image">
+                        {{!-- <input type="file" class="form-control-file" id="image" value="{{restaurant.image}}"> --}}
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="location" class="col-sm-2 col-form-label">地址 : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="請輸入餐廳地址"  name="location"
+                            id="location">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phone" class="col-sm-2 col-form-label">電話 : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="請輸入餐廳電話"  name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="google_map" class="col-sm-2 col-form-label">地圖 : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="請輸入餐廳地圖url" name="google_map"
+                            id="google_map">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="rating" class="col-sm-2 col-form-label">評價 : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="請輸入餐廳評價" name="rating" id="rating">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="description" class="col-sm-2 col-form-label">描述 : </label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" name="description" id="description"
+                            rows="5"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary col-md-1 offset-md-11">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
